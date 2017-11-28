@@ -34,7 +34,7 @@ public class AboutyouScraper {
         long startTime = System.currentTimeMillis();
         long beforeUsedMem = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
         String searchedValue = ""; for(int arg=0; arg<=args.length-1; arg++) { searchedValue += args[arg]+" "; }
-        String fileName = "./offers.xml";
+        String fileName = "./offers "+searchedValue+".xml";
         List<String> goodsUrls = new ArrayList<>();
         List<Goods> goods = new ArrayList<>();
 
